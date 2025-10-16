@@ -1,0 +1,33 @@
+{
+  "name": "a7-aplicando-conhecimento-web-mobile",
+  "version": "1.0.0",
+  "description": "API de descarte (Aula 7 - Web Mobile / NestJS + Mongoose)",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "start:dev": "ts-node -r tsconfig-paths/register --transpile-only src/main.ts",
+    "seed": "ts-node -r tsconfig-paths/register tools/seed.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/config": "^3.2.2",
+    "@nestjs/mongoose": "^10.0.2",
+    "mongoose": "^8.5.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "class-validator": "^0.14.1",
+    "class-transformer": "^0.5.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5",
+    "@types/node": "^20.11.24"
+  },
+  "license": "MIT"
+}

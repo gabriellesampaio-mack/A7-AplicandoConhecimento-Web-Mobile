@@ -1,0 +1,31 @@
+
+### Hello World
+GET http://localhost:3000
+
+### Criar ponto
+POST http://localhost:3000/descarte/pontos
+Content-Type: application/json
+
+{
+  "nomeLocal": "Ponto Central",
+  "bairro": "Centro",
+  "tipoLocal": "publico",
+  "categoriasAceitas": ["plastico","papel","vidro"],
+  "geolocalizacao": {"lat": -23.55, "lng": -46.63}
+}
+
+### Registrar descarte
+POST http://localhost:3000/descarte/registros
+Content-Type: application/json
+
+{
+  "nomeUsuario": "Gabi",
+  "pontoId": "68f16efacfa403f99f904a57",
+  "tipoResiduo": "vidro"
+}
+
+### Consultar registros por tipo
+GET http://localhost:3000/descarte/registros?tipoResiduo=plastico
+
+### Relatório
+GET http://localhost:3000/relatorio
