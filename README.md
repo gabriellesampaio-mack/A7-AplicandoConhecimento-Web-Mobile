@@ -27,3 +27,4 @@ Use `test/requests.http` no VSCode (extensão REST Client) ou cURL do guia.
 npm run seed
 ```
 Cria 1 ponto e alguns registros.
+# A7-AplicandoConhecimento-Web-Mobile
